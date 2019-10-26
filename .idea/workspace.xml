@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad70ac2f-6365-4c9d-9007-631bcf0f5017" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/person.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/intro.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/intro.go" afterDir="false" />
     </list>
@@ -45,11 +45,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build firstGo/main">
+  <component name="RunManager" selected="Go Build.go build firstGo/main (1)">
+    <configuration name="go build firstGo/main (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="firstGo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main/person.go" />
+      <package value="firstGo/main" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build firstGo/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="firstGo" />
       <working_directory value="$PROJECT_DIR$/" />
-      <kind value="PACKAGE" />
+      <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main/intro.go" />
       <package value="firstGo/main" />
       <method v="2" />
@@ -63,6 +72,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build firstGo/main (1)" />
         <item itemvalue="Go Build.go build firstGo/main" />
         <item itemvalue="Go Build.go build intro.go" />
       </list>

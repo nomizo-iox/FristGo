@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+	"math"
+)
+
 
 func main() {
 
@@ -56,4 +61,52 @@ func main() {
 	studentID["a002"] = 2
 	fmt.Println(studentID)
 	fmt.Println("a001")
+	fmt.Println(studentID["a002"])
+
+	// Loops.  Go only has For Loop
+	for i := 0; i < 5 ; i++ {
+		fmt.Println(i)
+	}
+
+	// Loop over Array
+	arr := []int{41, 9, 63, 10}
+	for index, value := range arr {
+		fmt.Println(index, value)
+	}
+
+	// Loop over Map
+	mcu := make(map[int]string)
+	mcu[1] = "Iron Man"
+	mcu[2] = "Incredible Hulk"
+	mcu[25] = "Black Panther"
+	for key, value := range mcu {
+		fmt.Println(key, value)
+	}
+
+	// Sum function
+	result := sum(34, 24)
+	fmt.Println(result)
+
+	// Sqrt function
+	result2, err := sqrt(16)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(result2)
+	}
 }
+
+// Function with return value
+func sum(o int, j int) int  {
+	return o * j
+}
+
+// Function with multiple return value
+func sqrt (k float64) (float64, error) {
+	if k < 0 {
+		return 0, errors.New("Undefine for negative numbers")
+	}
+
+	return math.Sqrt(k), nil
+}
+
